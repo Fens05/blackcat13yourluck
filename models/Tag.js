@@ -15,20 +15,20 @@ Tag.init(
       autoIncrement: true
       
     },
-   tag_id: {
-     type: DataTypes.STRING,
-     allowNull: false,
+  //  tag_id: {
+  //    type: DataTypes.STRING,
+  //    allowNull: false,
 
-    },
+  //   },
 
    tag_name:{
 
-    type: DataTypes.STRING,
-    references:{
-      model: 'product',
-      foreeign_key: 'id'
+    type: DataTypes.STRING
+    // references:{
+    //   model: 'product',
+    //   foreign_key: 'id'
 
-    }
+    // }
 
    }
   },

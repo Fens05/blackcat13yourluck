@@ -1,5 +1,3 @@
-const router = require('express').Router();
-const { Router } = require('express');
 const { Product } = require('../models');
 const productData =
 [
@@ -36,10 +34,7 @@ const productData =
 ];
 
 // Get /api products
-router.get('/',(req, res) => {});
-router.get('/:id', (req, res) => {});
-router.post('/', (req, res) => {});
-router.put()
+
 
 
 
