@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
           'product_name', 
           'price', 
           'stock',
-           'category_id']
+          'category_id']
         }
       ]
     })
@@ -23,7 +23,10 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     })
   });
-  
+  // router.get('/:id', (req, res) => {
+//   // find a single tag by its `id`
+//   // be sure to include its associated Product data
+
   router.get('/:id', (req, res) => {
     
     Tag.findOne({
@@ -53,14 +56,26 @@ router.get('/', (req, res) => {
     })
   });
 
-// router.get('/:id', (req, res) => {
-//   // find a single tag by its `id`
-//   // be sure to include its associated Product data
-// });
 
-// router.post('/', (req, res) => {
-//   // create a new tag
-// });
+
+
+
+router.post('/', (req, res) => {
+  //create a new tag
+  Tag.create({
+    tag_name: req.body.tag_name
+  })
+  .then(dbTagData => res.json(dbTagData))
+  .catch(err =>{
+    console.log();
+      res.status(500).json(err);
+    
+  })
+});
+
+
+
+
 
 // router.put('/:id', (req, res) => {
 //   // update a tag's name by its `id` value

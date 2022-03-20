@@ -19,11 +19,12 @@ THEN I am able to successfully create, update, and delete data in my database
     
     
 # Description
-this is a website for e commerce and to check on invintory
+This website is or helping with a stores invintory. 
+
 
 # image
 <src='href >
 
 #video
 
-    https://vimeo.com/687490731
+https://vimeo.com/690204441
